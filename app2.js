@@ -4,7 +4,8 @@
 //-----
 const fs = require('fs');
 
-const readMe = fs.readFileSync('readme.txt', 'utf8');
-// console.log(readMe);
-fs.writeFileSync('writeMe.txt', readMe);
+fs.readFile('readMe.txt', 'utf8', function(err, data){
+    console.log(data);
+});
 
+console.log('test');
