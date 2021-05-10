@@ -1,4 +1,4 @@
-# NetNinja_Lesson_09
+# NetNinja_NodeJS_Lesson_09
 Michael Clautice, Richmond, VA<br>
 The Net Ninja - Node JS Tutorial for Beginners<br> 
 Lesson 09 - Reading & Writing Files (fs)
