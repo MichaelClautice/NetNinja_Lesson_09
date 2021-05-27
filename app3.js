@@ -4,24 +4,28 @@
 //-----
 const fs = require('fs');
 
-// statement block below does not work:-----
+// old statement block below does not work
+// instructor's code is old & deprecated:-----
 
-/* fs.readFile('readMe.txt', 'utf8', function(err, data){
-    fs.writeFile('writeMe.txt', data);
+/* fs.readFile('readMeNow.txt', 'utf8', function(err, data){
+    fs.writeFile('writeMeNow.txt', data);
 }); */
 
-// statement block below DOES work:-----
+// new statement block w/out ES6 below DOES work:-----
 
-fs.readFile('readMe.txt', 'utf8', function(err, data){
-    
-    fs.writeFile('writeMe2.txt', data, (err)=>{});
-});
-
-// statement block below DOES work:-----
-
-/* fs.readFile('readMe.txt', 'utf8', function(err, data){
-    fs.writeFile('writeMe2.txt', data, function(err){
+/* fs.readFile('readMeNow.txt', 'utf8', function(err, data){
+    console.log(data);
+    fs.writeFile('writeMeNow.txt', data, function(err){
         if (err) throw err;
     });
+}); */
+
+// new statement block with ES6 below also DOES work:-----
+
+fs.readFile('readMeNow.txt', 'utf8', function(error, data){
+    console.log(data);    
+    fs.writeFile('writeMeNow.txt', data, (error)=>{});
 });
- */
+
+
+

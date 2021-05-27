@@ -5,12 +5,12 @@
 const fs = require('fs');
 
 // read-copy data & assign it to const readMe
-const readMe = fs.readFileSync('readme.txt', 'utf8');
+const readMeNow = fs.readFileSync('readMeNow.txt', 'utf8');
 
 // console.log const readMe
-console.log(readMe);
+console.log(readMeNow);
 
 // create writeMe.txt & write const readMe into it
-fs.writeFileSync('writeMe.txt', readMe); 
+fs.writeFileSync('writeMe1.txt', readMeNow); 
 
 

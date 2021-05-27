@@ -4,8 +4,8 @@
 //-----
 const fs = require('fs');
 
-fs.readFile('readMe.txt', 'utf8', function(err, data){
+fs.readFile('readMeNow.txt', 'utf8', function(err, data){
     console.log(data);
 });
 
-console.log('Async, Non-Blocking Code Test Here');
+console.log('\nAsync, Non-Blocking Code Test Here\n');
